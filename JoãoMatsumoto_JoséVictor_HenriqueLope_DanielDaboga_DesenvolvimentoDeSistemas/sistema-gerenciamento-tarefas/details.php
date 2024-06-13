@@ -47,9 +47,6 @@ if ($conn) {
             <li><strong>Nome da Tarefa:</strong> <?php echo htmlspecialchars($task['task_name']); ?></li>
             <li><strong>Descrição:</strong> <?php echo htmlspecialchars($task['task_description']); ?></li>
             <li><strong>Data:</strong> <?php echo htmlspecialchars($task['task_date']); ?></li>
-            <?php if (!empty($task['task_image'])) : ?>
-                <li><strong>Imagem:</strong> <img src="uploads/<?php echo $task['task_image']; ?>" alt="Imagem da Tarefa"></li>
-            <?php endif; ?>
         </ul>
         <a href="index.php" class="back-link">Voltar para a Lista de Tarefas</a>
     </div>
