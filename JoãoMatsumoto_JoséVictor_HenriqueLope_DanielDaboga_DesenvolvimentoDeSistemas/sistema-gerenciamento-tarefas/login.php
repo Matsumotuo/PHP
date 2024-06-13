@@ -46,9 +46,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <?php endif; ?>
         <form action="" method="POST">
             <label for="username">Nome de Usuário:</label>
-            <input type="text" name="username" required>
+            <input type="text" name="username">
             <label for="password">Senha:</label>
-            <input type="password" name="password" required>
+            <input type="password" name="password">
             <button type="submit">Entrar</button>
         </form>
         <a href="cadastro.php">Cadastrar</a>
