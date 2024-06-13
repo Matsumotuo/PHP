@@ -54,5 +54,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <p>Insira o seu e-mail abaixo para redefinir a sua senha.</p>
         <form action="" method="POST">
             <label for="email">E-mail:</label>
-            <input type="email" name="email" required>
-            <button type="submit">Enviar Instruçõe
+            <input type="email" name="email">
+            <button type="submit">Enviar Instruções</button>
+        </form>
+    </div>
+</body>
+</html>
