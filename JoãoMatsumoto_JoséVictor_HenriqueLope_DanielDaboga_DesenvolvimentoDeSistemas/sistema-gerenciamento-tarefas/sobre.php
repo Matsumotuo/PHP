@@ -9,6 +9,6 @@
 <body>
     <h1>Sobre</h1>
     <p>Sistema de tarefa simples para suas atividades diárias</p>
-    <p><a href="home.php">Página Inicial</a> | <a href="contato.php">Contato</a> | <a href="login.php">Login</a> | <a href="cadastro.php">Cadastro</a></p> 
+    <p><a href="home.php">Página Inicial</a> | <a href="contato.php">Contato</a> | <a href="sobre.php">Sobre</a> | <a href="login.php">Login</a> | <a href="cadastro.php">Cadastro</a></p> 
 </body>/
 </html>

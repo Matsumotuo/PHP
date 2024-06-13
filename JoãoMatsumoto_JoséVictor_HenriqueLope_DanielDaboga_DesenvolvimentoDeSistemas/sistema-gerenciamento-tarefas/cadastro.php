@@ -55,26 +55,42 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Cadastro</title>
+    <style>
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form {
+            width: 300px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Cadastro</h1>
-        <?php if (isset($_SESSION['error'])) : ?>
-            <div class="alert-error"><?php echo $_SESSION['error']; ?></div>
-            <?php unset($_SESSION['error']); ?>
-        <?php endif; ?>
-        <form action="" method="POST">
-            <label for="username">Nome de Usuário:</label>
-            <input type="text" name="username">
-            <label for="email">E-mail:</label>
-            <input type="email" name="email">
-            <label for="password">Senha:</label>
-            <input type="password" name="password">
-            <label for="confirm_password">Confirme a Senha:</label>
-            <input type="password" name="confirm_password">
-            <button type="submit">Cadastrar</button>
-        </form>
-        <a href="login.php">Voltar para Login</a>
+        <div class="form">
+            <h1>Cadastro</h1>
+            <?php if (isset($_SESSION['error'])) : ?>
+                <div class="alert-error"><?php echo $_SESSION['error']; ?></div>
+                <?php unset($_SESSION['error']); ?>
+            <?php endif; ?>
+            <form action="" method="POST">
+                <label for="username">Nome de Usuário:</label>
+                <input type="text" name="username">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email">
+                <label for="password">Senha:</label>
+                <input type="password" name="password">
+                <label for="confirm_password">Confirme a Senha:</label>
+                <input type="password" name="confirm_password">
+                <button type="submit">Cadastrar</button>
+            </form>
+            <a href="login.php">Voltar para Login</a>
+        </div>
     </div>
 </body>
 </html>
+

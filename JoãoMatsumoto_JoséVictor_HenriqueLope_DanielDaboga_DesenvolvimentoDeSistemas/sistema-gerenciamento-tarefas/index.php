@@ -133,6 +133,9 @@ if (isset($_POST['logout'])) {
                         </li>
                     <?php endforeach; ?>
                 </ul>
+                <form action="?clear" method="POST">
+                    <button type="submit">Limpar Tarefas</button>
+                </form>
             <?php else : ?>
                 <p>Nenhuma tarefa encontrada.</p>
             <?php endif; ?>
